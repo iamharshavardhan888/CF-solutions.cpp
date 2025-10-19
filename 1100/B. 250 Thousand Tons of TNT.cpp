@@ -12,7 +12,7 @@ void solve() {
     ll ans = 0;
     for (int num = 1; num < n; ++num) {
         if (n % num == 0) { // num is a factor of n
-            ll mini = 1e18, maxi = -1e18;
+            ll mini = 1e18, maxi = -1e18; // assigining left and right most values
             for (int i = 0; i < n; i += num) {
                 ll sum = 0;
                 for (int j = i; j < i + num; ++j) {
