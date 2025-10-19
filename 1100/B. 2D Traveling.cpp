@@ -5,7 +5,7 @@ typedef long long ll;
 ll calDist(pair<int, int> a, pair<int, int> b) {
     ll dx = (ll)a.first - (ll)b.first;
     ll dy = (ll)a.second - (ll)b.second;
-    return llabs(dx) + llabs(dy);
+    return llabs(dx) + llabs(dy); // To prevent Over flow
 }
 
 void solve() {
